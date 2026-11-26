@@ -1,5 +1,25 @@
 # 작업 기록
 
+## 2026-11-26 | Flutter 앱 생성 및 서버 연결 화면
+
+**한 일**
+- `flutter create app`으로 Flutter 프로젝트 생성
+- 버튼을 누르면 Spring /api/health를 호출해 결과를 보여주는 확인 화면 작성
+- 실행 환경별 서버 주소 분리 (에뮬레이터 10.0.2.2, 웹·윈도우 localhost)
+- http 패키지 추가, 안드로이드 인터넷 권한·http 통신 허용
+
+**바뀐 파일**
+- app/lib/main.dart, app/lib/api_config.dart, app/test/widget_test.dart
+- app/pubspec.yaml, app/android/app/src/main/AndroidManifest.xml
+
+**문제와 해결**
+- `flutter create` 중 패키지 받기(Resolving dependencies)가 6분 넘게 멈춤 → Ctrl+C 후 app 폴더에서 `flutter pub get`을 다시 실행해 해결
+- Spring·Python 엔진 연결은 check_connection.py로 둘 다 OK 확인
+
+**다음 할 일**
+- 에뮬레이터에서 앱 실행 후 서버 연결 확인 버튼 테스트
+- 시뮬레이션 수치(map.json) 확정, ERD·API 명세 작성 → 1단계 시작
+
 ## 2026-11-26 | 환경 구성 및 프로젝트 뼈대
 
 **한 일**

@@ -21,7 +21,8 @@
 - 상태값은 문자열 대신 enum을 쓴다 (예: 로봇 상태, 작업 상태).
 - 실패 응답은 ResponseEntity로 상태 코드와 에러 메시지를 함께 보낸다.
 - 필드 이름은 세 프로그램이 같게 맞춘다. 새 API를 만들면 아래 API 목록에 추가한다.
-- 에뮬레이터에서 Spring 주소는 http://10.0.2.2:8080 이다.
+- 에뮬레이터에서 Spring 주소는 http://10.0.2.2:8080 이다. 앱의 서버 주소는 app/lib/api_config.dart 한 곳에서만 관리한다.
+- 이 Flutter 버전은 `package:material_ui/material_ui.dart`를 쓴다 (`package:flutter/material.dart` 아님).
 - application.properties(비밀번호)는 커밋하지 않는다. 설정이 바뀌면 application-example.properties도 함께 고친다.
 
 ## API 목록
