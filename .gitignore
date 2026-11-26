@@ -1,0 +1,18 @@
+# 비밀 정보
+backend/src/main/resources/application.properties
+
+# 파이썬
+venv/
+__pycache__/
+
+# 스프링 빌드
+backend/build/
+backend/.gradle/
+
+# Flutter 빌드
+app/build/
+app/.dart_tool/
+
+# 에디터 개인 설정
+.vscode/
+.idea/
