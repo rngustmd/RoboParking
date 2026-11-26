@@ -16,3 +16,8 @@ app/.dart_tool/
 # 에디터 개인 설정
 .vscode/
 .idea/
+# 추가: 환경변수·로그·VS Code 자바 빌드 폴더
+.env
+.venv/
+*.log
+backend/bin/
